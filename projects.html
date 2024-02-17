@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>PERSONAL WEB - ADD MY PROJECT</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="./assets/css/styleProjects.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <img src="./assets/image/brandred.png" alt="logo-image">
+                <li class="active">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="./contactMe.html">Contact Me</a>
+        </div>
+    </nav>
+    <div>
+        <form class="add-my-project">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+                <label>Project Name</label>
+                <input type="text" id="projectname" />
+            </div>
+            <div class="date">
+                <div class="startdate">
+                    <label>Start Date</label>
+                    <input type="date" id="startdate" />
+                </div>
+                <div class="enddate">
+                    <label>End Date</label>
+                    <input type="date" id="enddate" />
+                </div>
+            </div>
+            <div>
+                <label>Description</label>
+                <textarea id="description"></textarea>
+            </div>
+            <div>
+                <label>Technologies</label>
+                <div class="technologies">
+                    <div class="flex-container-1">
+                        <div>
+                            <input type="checkbox" id="tech1">
+                            <label>Node JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tech2">
+                            <label>Vue JS</label>
+                        </div>
+                    </div>
+                    <div class="flex-container-2">
+                        <div>
+                            <input type="checkbox" id="tech3">
+                            <label>React JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="tech4">
+                            <label>JavaScript</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label>Upload Image</label>
+                <input type="file" id="uploadimg">
+            </div>
+
+            <div>
+                <button type="button" onclick="addProjects(event)">submit</button>
+            </div>
+        </form>
+    </div>
+    <hr class="line" />
+    <div>
+        <form class="my-project">
+            <h1>MY PROJECT</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row justify-content-center" id="contents"></div>
+                    <!-- dynamic content would be loaded on here -->
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./assets/js/project.js"></script>
+
+</html>
